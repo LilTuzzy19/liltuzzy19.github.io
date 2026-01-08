@@ -2,55 +2,62 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <title>Empresa Familiar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-
-    <!-- Descripción para SEO -->
-    <meta name="description" content="Mi primera página web publicada con GitHub Pages">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Bienvenido a mi página</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <!-- HERO / PORTADA -->
+    <header class="hero">
+        <div class="overlay">
+            <h1>EMPRESA FAMILIAR</h1>
+            <h2>Compromiso • Confianza • Calidad</h2>
+            <p>
+                Atendemos a nuestra comunidad con dedicación y cercanía.
+            </p>
+
+            <div class="buttons">
+                <a href="#contacto" class="btn amarillo">RESERVAR</a>
+                <a href="#info" class="btn azul">MÁS INFORMACIÓN</a>
+            </div>
+        </div>
     </header>
 
-    <!-- MAIN -->
-    <main>
+    <!-- INFO -->
+    <section id="info" class="info">
+        <div class="box">
+            <h3>Horario</h3>
+            <p>Lunes a Viernes</p>
+            <p>09:00 - 18:00</p>
+        </div>
 
-        <section id="inicio">
-            <h2>Inicio</h2>
-            <p>Esta es mi primera página web usando GitHub Pages 🚀</p>
-        </section>
+        <div class="box">
+            <h3>Ubicación</h3>
+            <p>Dirección de la empresa</p>
+            <p>Ciudad, País</p>
+        </div>
 
-        <section id="sobre-mi">
-            <h2>Sobre mí</h2>
-            <p>Aquí puedes escribir información sobre ti o tu proyecto.</p>
-        </section>
+        <div class="box destacado">
+            <h3>Atención Especial</h3>
+            <p>Atención personalizada</p>
+            <p>Llámanos para más información</p>
+        </div>
+    </section>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Email: ejemplo@email.com</p>
-        </section>
-
-    </main>
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>📞 Teléfono: +56 9 1234 5678</p>
+        <p>✉️ Email: contacto@empresa.cl</p>
+    </section>
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2026 - Mi Página Web</p>
+        <p>© 2026 Empresa Familiar - Todos los derechos reservados</p>
     </footer>
 
-    <!-- JS -->
-    <script src="js/main.js"></script>
 </body>
 </html>

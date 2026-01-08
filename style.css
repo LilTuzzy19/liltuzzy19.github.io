@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background-image: url("img/portada.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.overlay h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.overlay h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.overlay p {
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+/* BOTONES */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 15px 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.amarillo {
+    background-color: #f5c400;
+}
+
+.azul {
+    background-color: #00a2c7;
+    color: white;
+}
+
+/* INFO */
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #0b6f86;
+    color: white;
+}
+
+.box {
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+}
+
+.destacado {
+    background-color: #f5c400;
+    color: black;
+}
+
+/* CONTACTO */
+.contacto {
+    padding: 40px;
+    text-align: center;
+    background-color: white;
+}
+
+.contacto h2 {
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

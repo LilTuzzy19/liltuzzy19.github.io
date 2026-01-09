@@ -167,3 +167,28 @@ footer {
     font-size: 16px;
     line-height: 1.7;
 }
+
+.contenedor-texto {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contenedor-texto p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 768px) {
+    .contenedor-texto {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .contenedor-texto p {
+        font-size: 15px;
+    }
+}

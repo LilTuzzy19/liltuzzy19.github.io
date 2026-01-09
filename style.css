@@ -143,3 +143,27 @@ footer {
     text-align: center;
     padding: 15px;
 }
+
+.valores-lista {
+    list-style: none;
+    max-width: 600px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.valores-lista li {
+    background-color: #f5c400;
+    padding: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.texto-largo {
+    max-width: 900px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 1.7;
+}

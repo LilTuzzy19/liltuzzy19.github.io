@@ -2,159 +2,190 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Agrícola y Transportes Perezoso SpA</title>
+    <title>South Width | Streetwear</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO -->
-    <meta name="description" content="Agrícola y Transportes Perezoso SpA. Venta de áridos, arriendo de maquinaria pesada, transporte por carretera, cama baja y trabajos especializados en Cabrero y Región del Biobío.">
-    <meta name="keywords" content="áridos, maquinaria pesada, transporte, cama baja, excavadora, retroexcavadora, Cabrero, Biobío">
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: #0f0f0f;
+            color: #fff;
+        }
+
+        /* NAVBAR */
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            background: rgba(15,15,15,0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+
+        .menu a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            opacity: 0.6;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 120px 20px 40px;
+            gap: 40px;
+        }
+
+        .hero-text h1 {
+            font-size: 60px;
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        .hero-text h1 span {
+            opacity: 0.3;
+        }
+
+        .hero-text p {
+            margin: 30px 0;
+            font-size: 16px;
+            max-width: 500px;
+            opacity: 0.8;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: 1px solid #fff;
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        .btn.alt {
+            border: 1px solid #555;
+            opacity: 0.8;
+        }
+
+        /* IMAGEN HERO */
+        .hero-img {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-img img {
+            width: 100%;
+            border-radius: 20px;
+            filter: grayscale(100%);
+            transition: 0.6s;
+        }
+
+        .hero-img img:hover {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 45px;
+            }
+
+            .buttons {
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-    <div class="nav-contenedor">
-        <ul class="menu">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#galeria">Galería</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-        <div class="logo">
-            <img src="img/logo.png" alt="Agrícola y Transportes Perezoso">
-        </div>
-    </div>
-</nav>
-
-<!-- HERO -->
-<header class="hero" id="inicio">
-    <div class="overlay">
-        <div class="hero-contenido animar">
-            <h1>AGRICOLA Y TRANSPORTES PERESOSO SPA</h1>
-            <h2>Compromiso • Confianza • Calidad</h2>
-            <p>
-                Servicios de transporte, venta de áridos y arriendo de maquinaria pesada,
-                cumpliendo los más altos estándares de seguridad y eficiencia.
-            </p>
-            <div class="buttons">
-                <a href="#servicios" class="btn amarillo">Ver Servicios</a>
-                <a href="#contacto" class="btn azul">Contacto</a>
-            </div>
-        </div>
+<header>
+    <div class="nav">
+        <div class="logo">SOUTH WIDTH</div>
+        <nav class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Ropa</a>
+            <a href="#">Accesorios</a>
+            <a href="#">Colecciones</a>
+            <a href="#">Contacto</a>
+        </nav>
     </div>
 </header>
 
-<!-- NOSOTROS -->
-<section id="nosotros" class="section">
-    <div class="contenedor animar">
-        <h2>Sobre Nosotros</h2>
-        <div class="columnas">
-            <p>
-                <strong>Agrícola y Transportes Perezoso SpA</strong> es una empresa dedicada
-                a la venta de áridos, arriendo de maquinaria pesada y transporte especializado
-                para proyectos agrícolas y de construcción.
-            </p>
-            <p>
-                Contamos con excavadoras, retroexcavadora, camiones tolva, camión pluma,
-                cama baja y transporte por carretera, entregando soluciones integrales y seguras.
-            </p>
+<section class="hero">
+    <div class="hero-text">
+        <h1>
+            STREETWEAR<br>
+            <span>DESDE EL SUR</span>
+        </h1>
+
+        <p>
+            South Width nace en el sur de Chile, inspirada en la calle,
+            el frío y la identidad. Diseños limpios, reales y sin exceso.
+        </p>
+
+        <div class="buttons">
+            <a href="#" class="btn">VER COLECCIÓN</a>
+            <a href="#" class="btn alt">NUEVOS LANZAMIENTOS</a>
         </div>
     </div>
-</section>
 
-<!-- MISION Y VISION -->
-<section class="section fondo-gris">
-    <div class="contenedor animar">
-        <h2>Misión y Visión</h2>
-        <div class="columnas">
-            <div>
-                <h3>Misión</h3>
-                <p>
-                    Brindar soluciones integrales en venta de áridos, maquinaria pesada y transporte,
-                    aportando al desarrollo de proyectos con eficiencia y seguridad.
-                </p>
-            </div>
-            <div>
-                <h3>Visión</h3>
-                <p>
-                    Ser una empresa referente en la Región del Biobío, reconocida por su
-                    calidad, responsabilidad y compromiso con el entorno.
-                </p>
-            </div>
-        </div>
+    <div class="hero-img">
+        <!-- CAMBIA ESTA IMAGEN POR UNA TUYA -->
+        <img src="https://images.unsplash.com/photo-1520975867597-0af37a22e31a" alt="Streetwear">
     </div>
 </section>
 
-<!-- SERVICIOS -->
-<section id="servicios" class="section fondo-azul">
-    <div class="contenedor animar">
-        <h2>Servicios</h2>
-
-        <div class="tarjetas">
-            <div class="card" onclick="abrirServicio('maquinaria')">🚜 Arriendo de Maquinaria</div>
-            <div class="card" onclick="abrirServicio('aridos')">🪨 Venta de Áridos</div>
-            <div class="card" onclick="abrirServicio('montaje')">🏗 Trabajos Especializados</div>
-            <div class="card" onclick="abrirServicio('transporte')">🚛 Transporte</div>
-            <div class="card" onclick="abrirServicio('cama')">🔧 Cama Baja</div>
-            <div class="card" onclick="abrirServicio('personal')">🤝 Atención Personalizada</div>
-        </div>
-    </div>
-</section>
-
-<!-- MODAL SERVICIOS -->
-<div id="modal-servicio">
-    <div class="modal-contenido">
-        <span class="cerrar" onclick="cerrarServicio()">✖</span>
-        <h3 id="titulo-servicio"></h3>
-        <p id="texto-servicio"></p>
-    </div>
-</div>
-
-<!-- GALERIA -->
-<section id="galeria" class="section fondo-gris">
-    <div class="contenedor animar">
-        <h2>Galería</h2>
-        <div class="galeria">
-            <img src="img/foto1.jpg" onclick="abrirLightbox(this.src)">
-            <img src="img/foto2.jpg" onclick="abrirLightbox(this.src)">
-            <img src="img/foto3.jpg" onclick="abrirLightbox(this.src)">
-        </div>
-    </div>
-</section>
-
-<div id="lightbox" onclick="cerrarLightbox()">
-    <img id="lightbox-img">
-</div>
-
-<!-- CONTACTO -->
-<section id="contacto" class="section">
-    <div class="contenedor animar">
-        <h2>Contacto</h2>
-        <p>📞 +56 9 7752 4880</p>
-        <p>✉️ manuel_monares@hotmail.com</p>
-        <p>📍 Cabrero, Región del Biobío</p>
-
-        <!-- MAPA -->
-        <iframe
-            src="https://www.google.com/maps?q=Cabrero,Chile&output=embed"
-            width="100%" height="300" style="border:0; margin-top:20px;"
-            loading="lazy">
-        </iframe>
-    </div>
-</section>
-
-<!-- WHATSAPP -->
-<a href="https://wa.me/56977524880" target="_blank" class="whatsapp">
-    <img src="img/whatsapp.png" alt="WhatsApp">
-</a>
-
-<footer>
-    <p>© 2026 Agrícola y Transportes Perezoso SpA</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
